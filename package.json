@@ -1,0 +1,52 @@
+{
+  "name": "@adaflow/router-sdk",
+  "version": "0.0.0",
+  "description": "SDK Node/TypeScript oficial do Adalink AI Router: chat, mensagens, embeddings, modelos, decisão de roteador e gerações retomáveis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adalink-ai/router-sdk.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "changeset": "changeset",
+    "release": "pnpm build && changeset publish"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "packageManager": "pnpm@10.28.2",
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.1.0",
+    "@changesets/cli": "^2.31.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

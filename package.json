@@ -1,6 +1,6 @@
 {
   "name": "@adaflow/router-sdk",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "SDK Node/TypeScript oficial do Adalink AI Router: chat, mensagens, embeddings, modelos, decisão de roteador e gerações retomáveis",
   "repository": {
     "type": "git",
